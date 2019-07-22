@@ -40,7 +40,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/home/alta11/Nada/DJANGO_MVC/project_model/env_project_model"
+VIRTUAL_ENV="/home/alta11/DJANGO_MVC/project_model/env_project_model"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

@@ -1,4 +1,4 @@
-#!/home/alta11/Nada/DJANGO_MVC/project_model/env_project_model/bin/python
+#!/home/alta11/DJANGO_MVC/project_model/env_project_model/bin/python
 
 import sys
 import getopt
