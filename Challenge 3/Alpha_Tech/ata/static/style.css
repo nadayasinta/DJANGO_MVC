@@ -41,8 +41,12 @@ header a:hover{
     width: 300px;
 }
 
-.logo_home2{
+.logo_home2a{
     width: 61px;
+}
+
+.logo_home2b{
+    width: 100px;
 }
 
 .foto_mentor,
@@ -53,6 +57,12 @@ header a:hover{
 
 .willlearn{
     height: 150px;
+    width: 150;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+
 }
 
 .tab { 
