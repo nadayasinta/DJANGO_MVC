@@ -1,0 +1,67 @@
+header ul{
+    list-style-type: none;
+    float :right;
+}
+
+header ul li{
+    float: left;
+    padding: 0 10px;
+}
+
+header a{
+    color: rgb(60, 60, 60);
+    text-decoration: none;
+}
+
+header a:hover{
+    color: rgb(60, 60, 60);
+}
+
+.headerbawah {
+    background-color:#2EC6CE;
+    color: white;
+    padding: 0 400px;
+}
+
+.footeratas{
+    background-color:#2EC6CE;
+    font-size: 20px;
+}
+
+.footerbawah{
+    background-color:black;
+    color: white;
+}
+
+.logo_home1a{
+    width: 111px;
+}
+
+.logo_home1b{
+    width: 300px;
+}
+
+.logo_home2{
+    width: 61px;
+}
+
+.foto_mentor,
+.foto_mentee,
+.foto_blog{
+    width: 100%;
+}
+
+.willlearn{
+    height: 150px;
+}
+
+.tab { 
+    display:inline-block; 
+    margin-left: 40px; 
+}
+
+
+.mentor_name,
+.mentee_name{
+    color:  grey;
+}

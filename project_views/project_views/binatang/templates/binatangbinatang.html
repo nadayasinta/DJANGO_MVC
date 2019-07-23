@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<ul>
+    {%for i in list_hewan %}
+    <li>{{i.nama}}</li>
+    {% endfor %}
+</ul>
+
+<form method="POST">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button type="submit" >Submit</button>
+</form>
+{% endblock %}

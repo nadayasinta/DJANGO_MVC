@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <ul>
+        {%for i in list_hewan %}
+        <li>{{i.nama}}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

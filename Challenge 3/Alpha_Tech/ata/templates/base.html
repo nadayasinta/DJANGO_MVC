@@ -1,0 +1,66 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="{% static 'style.css'%}" rel="stylesheet" >
+    <link href="{% static 'bootstrap.min.css'%}" rel="stylesheet">
+    <title>Alpha Tech Accademy</title>
+</head>
+<body>
+    <header>
+        <div class="container-fluid">
+                <div class="row p-3">
+                    <div class="col-6">
+                            <a href="{% url 'halaman_home' %}"><h5 class="m-0">Alpha Tech Academy</h5></a>
+                    </div>
+                    <div class="col-6">
+                        <nav>
+                            <ul class="m-0">
+                                <a href="{% url 'halaman_home' %}"><li>Home</li></a>
+                                <a href="{% url 'halaman_blog' %}"><li>Blog</li></a>
+                                <a href="{% url 'halaman_mentor' %}"><li>Mentor</li></a>
+                                <a href="{% url 'halaman_mentee' %}"><li>Mentee</li></a>
+                                <a href="{% url 'halaman_author' %}"><li>Author</li></a>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="row text-center headerbawah py-4">
+                    <div class="col-12 ">
+                        <img class="logo_ata" src="https://i.postimg.cc/mrRR4MFM/alpha-logo.png" />
+                    </div>
+                    <div class="col-12 ">
+                        <h1>Alpha Tech Academy</h1>
+                    </div>
+                    <div class="col-12">
+                        <p >Alpha tech Academy is a tech talent incubator that gives everyone (even non IT background) a chance to be a professional Tech Talent within 3 months.Contact Person: Email: academy@alphatech.id Mobile phone: 0877 9609 9530</p>
+                    </div>
+                </div>
+        </div>
+    </header>
+    
+    {%block content%}
+    {%endblock%}
+    
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 text-center footeratas py-2">
+                    <span>Our Product:</span>
+                    <img class="logo_alphapay mx-1" src="https://i.postimg.cc/XY93txX4/logo-grey-alphapay.png" />
+                    <img class="logo_sepulsa mx-1" src="https://i.postimg.cc/9fjXfKsD/logo-grey-sepulsa.png" />
+                    <img class="logo_alphabill mx-1" src="https://i.postimg.cc/gJ2WXWs2/logo-grey-alphabill.png" />
+                </div>
+                <div class="col-12 text-center footerbawah py-3">
+                    <span> <b>Contact Person</b>: Mobile phone: 0877 9609 9530. Email: <a href="#">academy@alphatech.id</a> </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

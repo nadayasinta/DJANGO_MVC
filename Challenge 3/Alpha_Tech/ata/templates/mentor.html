@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container py-5">
+    <div class="row text-center">
+        <div class="col-12"><h2>Our Mentor</h2></div>
+        
+    </div>
+    {%for i in list_mentor %}
+        <div class="row py-4 justify-content-center">
+            <div class="col-3 text-right">
+                <img class="foto_mentor" src="{{i.photo}}" />
+                
+            </div>
+            <div class="col-6 pl-5 py-3">
+                <h5 class="mentor_name">{{i.name}}</h5>
+                <h6><b>{{i.position}} ({{i.experience}} years experience)</b></h6> 
+                <p>"{{i.comment}}"</p>      
+            </div>    
+        </div>
+    {% endfor %}
+</div>
+
+{% endblock %}

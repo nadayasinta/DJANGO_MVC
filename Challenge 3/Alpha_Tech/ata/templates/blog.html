@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container py-5">  
+        {%for i in list_blog %}
+            <div class="row justify-content-center">
+                <div class="col-8 py-4">
+                    <div class="row text-center">
+                        <img class="foto_blog" src="{{i.photo}}" />
+                    </div>
+                    <div class="row">
+                        <div class="col-6 p-0">
+                            <span>{{i.date_create}}</span> 
+                        </div>
+                        <div class="col-6 text-right p-0">
+                            <span> 0 comment</span>                            
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h2 class="blog_judul">{{i.title}}</h2>
+                        <p>{{ i.content|safe|truncatewords:"50"|linebreaks }}</p>          
+                        <p><a href="#">Baca Selengkapnya</a></p>
+                    </div>
+
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+{% endblock %}
